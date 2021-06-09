@@ -1,0 +1,99 @@
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1; }
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline: 2px solid #f00;
+  outline-offset: 2px; }
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none; }
+
+.header {
+  background: #000; }
+  .header__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0; }
+    .header__content::after {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 0;
+      opacity: 0.3;
+      width: 100vw;
+      height: 1px;
+      content: '';
+      background: #C4C4C4; }
+  .header__left {
+    display: flex;
+    align-items: center; }
+  .header__logo-text {
+    margin-left: 20px; }
+  .header__name {
+    font-family: "PT Serif";
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px; }
+  .header__subname {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #fff; }
+  .header__right {
+    display: flex;
+    align-items: center; }
+  .header__num, .header__mail {
+    display: flex;
+    align-items: center; }
+  .header__num-text, .header__mail-text {
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    margin-left: 13px; }
+  .header__num {
+    margin-right: 33px; }
+  .header__mail {
+    margin-right: 45px; }
+  .header__btn {
+    height: 44px;
+    width: 186px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px; }
+  .header__nav {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; }
+  .header__nav-items {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #fff;
+    position: relative; }
+    .header__nav-items + .header__nav-items {
+      margin-left: 32px; }
+    .header__nav-items::after {
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      content: '';
+      bottom: -6px;
+      left: 0;
+      opacity: 0;
+      background-color: #fff;
+      transition: opacity 0.1s linear; }
+    .header__nav-items:hover::after {
+      opacity: 1; }
+
+/*# sourceMappingURL=main.css.map */
