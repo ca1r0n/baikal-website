@@ -160,4 +160,30 @@
     .intro__arrow-img path {
       transition: stroke 0.1s linear; }
 
+.navigation {
+  margin: 62px 0; }
+  .navigation__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    -moz-column-gap: 32px;
+    column-gap: 32px;
+    row-gap: 32px; }
+  .navigation__item {
+    border-radius: 6px;
+    border: 1px solid #D9D9DE;
+    background-color: #fff; }
+    .navigation__item:hover .navigation__text {
+      color: #D51A1A; }
+  .navigation__img {
+    width: 100%;
+    height: auto; }
+  .navigation__text {
+    padding: 17px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: black;
+    transition: color 0.1s linear; }
+
 /*# sourceMappingURL=main.css.map */
