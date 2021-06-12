@@ -67,9 +67,30 @@
   transform: translate(-50%);
   bottom: 0;
   width: 100%;
-  height: 2px;
+  height: 1px;
   content: '';
   background: #C4C4C4; }
+
+.path {
+  color: white;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  position: absolute;
+  top: 22px; }
+  .path__link {
+    color: white;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px; }
+    .path__link:hover {
+      text-decoration: underline; }
+  .path--dark {
+    color: #76767A; }
+    .path--dark .path__link {
+      color: #76767A; }
 
 .header {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
@@ -262,6 +283,8 @@
     font-weight: 500;
     line-height: 19px;
     color: white; }
+    .footer__title:hover {
+      text-decoration: underline; }
   .footer__link {
     color: rgba(255, 255, 255, 0.7);
     font-family: Roboto;
@@ -741,15 +764,6 @@
     display: flex;
     justify-content: center;
     align-items: center; }
-  .toursbase-intro__link, .toursbase-intro__path {
-    color: white;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px; }
-  .toursbase-intro__path {
-    position: absolute;
-    top: 22px; }
   .toursbase-intro__link:hover {
     text-decoration: underline; }
   .toursbase-intro__title {
@@ -852,5 +866,110 @@
     margin-bottom: 10px; }
     .toursbase-content__end-link:hover {
       text-decoration: underline; }
+
+.tour-content .container {
+  position: relative; }
+
+.tour-content__inner {
+  padding-top: 110px;
+  padding-bottom: 70px;
+  display: flex;
+  gap: 32px; }
+
+.tour-content__menu {
+  display: block; }
+
+.tour-content__title {
+  font-size: 44px;
+  line-height: 58px;
+  margin-bottom: 50px; }
+
+.tour-content__img {
+  border-radius: 6px;
+  margin-bottom: 30px; }
+
+.tour-content__text {
+  color: #333333;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px; }
+  .tour-content__text + .tour-content__text {
+    margin-top: 15px; }
+
+.menu {
+  border-radius: 6px;
+  background: #F5F5F7;
+  min-width: 350px;
+  max-width: 350px;
+  padding: 30px 25px 25px 25px; }
+  .menu__item + .menu__item {
+    margin-top: 15px; }
+  .menu__title {
+    color: #76767A;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    margin-bottom: 20px; }
+  .menu__link {
+    color: #0050B2;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    transition: color 0.1s linear, -webkit-text-decoration 0.1s linear;
+    transition: color 0.1s linear, text-decoration 0.1s linear;
+    transition: color 0.1s linear, text-decoration 0.1s linear, -webkit-text-decoration 0.1s linear; }
+    .menu__link:hover {
+      color: #D51A1A;
+      text-decoration: underline; }
+    .menu__link--active {
+      color: #64BD22; }
+      .menu__link--active:hover {
+        color: #64BD22;
+        text-decoration: none; }
+
+.tour-choice {
+  margin-top: 60px;
+  margin-bottom: 80px; }
+  .tour-choice__title {
+    text-align: center;
+    margin-bottom: 50px; }
+  .tour-choice__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -moz-column-gap: 32px;
+    column-gap: 32px;
+    row-gap: 32px; }
+  .tour-choice__items {
+    border: 1px solid #D9D9DE;
+    border-radius: 6px;
+    overflow: hidden; }
+    .tour-choice__items:hover .tour-choice__img {
+      transform: scale(1.2); }
+  .tour-choice__img {
+    width: 100%;
+    transition: transform 0.1s linear; }
+  .tour-choice__items-title {
+    padding-top: 16px;
+    padding-left: 15px;
+    position: relative;
+    z-index: 10;
+    color: black;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    background-color: white; }
+  .tour-choice__items-price {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    color: #333333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px; }
 
 /*# sourceMappingURL=main.css.map */
