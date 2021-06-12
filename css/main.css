@@ -874,6 +874,7 @@
   padding-top: 110px;
   padding-bottom: 70px;
   display: flex;
+  align-items: flex-start;
   gap: 32px; }
 
 .tour-content__menu {
