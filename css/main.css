@@ -186,8 +186,12 @@
   font-weight: 400;
   line-height: 25px;
   margin: 28px 0; }
+  .p span {
+    font-weight: 700; }
   .p--no-margin {
     margin: 0; }
+  .p--limited {
+    max-width: 832px; }
 
 .ol {
   list-style-type: decimal; }
@@ -225,6 +229,21 @@
   display: flex;
   gap: 32px;
   margin: 32px 0; }
+
+.table {
+  width: 100%; }
+
+.tr {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px; }
+  .tr--top th {
+    background: #F5F5F7;
+    font-weight: 500; }
+  .tr th {
+    border: 1px solid #D9D9DE;
+    padding: 21px; }
 
 .header {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
@@ -881,33 +900,72 @@
     font-weight: 500;
     line-height: 26px; }
 
-.toursbase-intro {
-  height: calc(100vh - 128px);
-  width: 100%;
+#toursbase {
   background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../img/toursbase-intro.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
-  .toursbase-intro .container {
+
+#excursions {
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../img/excursions-intro.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.page-intro {
+  height: calc(100vh - 128px);
+  width: 100%; }
+  .page-intro .container {
     height: 100%;
     width: 100%;
     position: relative; }
-  .toursbase-intro__inner {
+  .page-intro__inner {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center; }
-  .toursbase-intro__link:hover {
+  .page-intro__link:hover {
     text-decoration: underline; }
-  .toursbase-intro__title {
+  .page-intro__title {
     text-align: center;
     color: white;
     font-size: calc(29px + 15 * (100vw / 1370));
     line-height: calc(39px + 19 * (100vw / 1370)); }
     @media (max-width: 736px) {
-      .toursbase-intro__title {
+      .page-intro__title {
         font-size: calc(29px + 15 * ((100vw - 320) / 1370)); } }
+
+.list-style-one {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 32px;
+  column-gap: 32px;
+  row-gap: 32px; }
+  .list-style-one__items {
+    border-radius: 6px;
+    border: 1px solid #D9D9DE;
+    padding-bottom: 16px;
+    overflow: hidden; }
+    .list-style-one__items:hover .list-style-one__img {
+      transform: scale(1.2); }
+  .list-style-one__img {
+    width: 100%;
+    transition: transform 0.1s linear; }
+  .list-style-one__title {
+    position: relative;
+    z-index: 10;
+    background: white;
+    margin-bottom: 30px;
+    padding: 0 16px;
+    padding-top: 12px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: black; }
+  .list-style-one__price {
+    padding: 0 16px; }
 
 .toursbase-content {
   margin-top: 80px;
@@ -1000,6 +1058,30 @@
     margin-bottom: 10px; }
     .toursbase-content__end-link:hover {
       text-decoration: underline; }
+
+.excursions-content__inner {
+  margin-top: 60px; }
+
+.excursions-content__text {
+  max-width: 826px; }
+
+.excursions-content__list {
+  margin-top: 60px;
+  margin-bottom: 80px; }
+
+.excursion-ulad-ude {
+  margin-bottom: 80px; }
+  .excursion-ulad-ude .container {
+    position: relative;
+    padding-top: 110px; }
+  .excursion-ulad-ude__title {
+    font-family: PT Serif;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 58px;
+    margin-bottom: 50px; }
+  .excursion-ulad-ude__img {
+    margin-bottom: 50px; }
 
 .menu {
   border-radius: 6px;
