@@ -54,6 +54,35 @@
     background: #004395;
     color: white; }
 
+.green-download-btn {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: white;
+  background: #64BD22;
+  width: 234px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px; }
+  .green-download-btn img {
+    margin-right: 12px; }
+
+.blue-download-btn {
+  display: flex;
+  align-items: flex-end;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  color: #0050B2; }
+  .blue-download-btn img {
+    margin-right: 12px; }
+
 .divid-bot::after {
   position: absolute;
   left: 50%;
@@ -164,7 +193,17 @@
   list-style-type: decimal; }
 
 .ul {
-  list-style-type: circle; }
+  list-style-type: disc; }
+
+.li {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: black;
+  margin-left: 20px; }
+  .li + .li {
+    margin-top: 10px; }
 
 .photo-style-1 {
   display: grid;
@@ -962,27 +1001,6 @@
     .toursbase-content__end-link:hover {
       text-decoration: underline; }
 
-.tour-content .container {
-  position: relative; }
-
-.tour-content__inner {
-  padding-top: 110px;
-  padding-bottom: 70px;
-  display: flex;
-  align-items: flex-start;
-  gap: 32px; }
-
-.tour-content__menu {
-  display: block; }
-
-.tour-content__title {
-  font-size: 44px;
-  line-height: 58px;
-  margin-bottom: 50px; }
-
-.tour-content__img {
-  border-radius: 6px; }
-
 .menu {
   border-radius: 6px;
   background: #F5F5F7;
@@ -1011,6 +1029,27 @@
       .menu__link--active:hover {
         color: #64BD22;
         text-decoration: none; }
+
+.tour-content .container {
+  position: relative; }
+
+.tour-content__inner {
+  padding-top: 110px;
+  padding-bottom: 70px;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px; }
+
+.tour-content__menu {
+  display: block; }
+
+.tour-content__title {
+  font-size: 44px;
+  line-height: 58px;
+  margin-bottom: 50px; }
+
+.tour-content__img {
+  border-radius: 6px; }
 
 .tour-choice {
   margin-top: 60px;
@@ -1053,5 +1092,104 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 21px; }
+
+.base-goriachi-kluch-content .container {
+  position: relative; }
+
+.base-goriachi-kluch-content__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  padding-top: 110px; }
+
+.base-goriachi-kluch-content__title {
+  font-family: PT Serif;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 58px;
+  color: black;
+  margin-bottom: 60px; }
+
+.base-goriachi-kluch-content__img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px; }
+
+.rooms__block-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 43px; }
+  .rooms__block-title h2 {
+    margin: 0; }
+
+.rooms__items {
+  background: #F5F5F7;
+  display: grid;
+  grid-template-columns: 1fr 274px;
+  -moz-column-gap: 32px;
+  column-gap: 32px;
+  margin-bottom: 30px; }
+
+.rooms__items-left {
+  padding: 23px 0 23px 23px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px; }
+
+.rooms__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  color: black;
+  margin-bottom: 21px; }
+
+.rooms__description {
+  margin-bottom: 12px; }
+  .rooms__description span {
+    font-weight: 700; }
+
+.rooms__btn {
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  color: #76767A;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px; }
+
+.rooms__items-right {
+  padding: 23px 23px 23px 0; }
+
+.rooms__price {
+  float: right;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: black;
+  margin-bottom: 17px; }
+
+.rooms__img {
+  width: 100%;
+  height: auto; }
+
+.rooms__dropdown-png--active {
+  transform: rotate(180deg); }
+
+.rooms__dropdown {
+  position: relative;
+  z-index: 1;
+  display: none;
+  padding: 23px 23px 23px 23px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px; }
+  .rooms__dropdown--active {
+    display: block; }
 
 /*# sourceMappingURL=main.css.map */
