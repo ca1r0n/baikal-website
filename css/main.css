@@ -125,6 +125,17 @@
       font-size: 22px;
       line-height: 28px; } }
 
+.title-page {
+  font-family: PT Serif;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 58px;
+  margin-bottom: 50px; }
+
+.page-img {
+  border-radius: 6px;
+  margin-bottom: 32px; }
+
 .h1 {
   font-family: Roboto;
   font-size: 44px;
@@ -139,7 +150,7 @@
       line-height: 36px; } }
 
 .h2 {
-  font-family: PT Serif;
+  font-family: Roboto;
   font-size: 30px;
   font-weight: 700;
   line-height: 39px;
@@ -244,6 +255,10 @@
   .tr th {
     border: 1px solid #D9D9DE;
     padding: 21px; }
+
+.inner {
+  margin-bottom: 80px;
+  padding-top: 110px; }
 
 .header {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
@@ -526,6 +541,9 @@
   .header-type-1__num, .header-type-1__mail {
     display: flex;
     align-items: center; }
+    @media (max-width: 992px) {
+      .header-type-1__num, .header-type-1__mail {
+        display: none; } }
   .header-type-1__num-text, .header-type-1__mail-text {
     color: #fff;
     font-family: "Roboto";
@@ -912,6 +930,12 @@
   background-position: center center;
   background-repeat: no-repeat; }
 
+#hunting-and-fishing {
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../img/hunting-and-fishing-intro.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
 .page-intro {
   height: calc(100vh - 128px);
   width: 100%; }
@@ -966,6 +990,55 @@
     color: black; }
   .list-style-one__price {
     padding: 0 16px; }
+
+.list-style-two {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 80px; }
+  .list-style-two__items {
+    display: grid;
+    grid-template-columns: 352px 1fr;
+    -moz-column-gap: 32px;
+    column-gap: 32px;
+    border-radius: 6px;
+    background-color: #F5F5F7; }
+  .list-style-two__img {
+    max-width: 100%; }
+  .list-style-two__right {
+    padding: 24px 24px 24px 0;
+    font-family: Roboto;
+    color: black; }
+  .list-style-two__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px; }
+  .list-style-two__text {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #333333; }
+  .list-style-two__bot {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 35px; }
+  .list-style-two__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; }
+    .list-style-two__description span {
+      font-weight: 700; }
+  .list-style-two__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 156px;
+    height: 44px; }
+
+.content-text {
+  max-width: 826px; }
 
 .toursbase-content {
   margin-top: 80px;
