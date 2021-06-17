@@ -1,13 +1,23 @@
 "use strict";
 
+var width = document.documentElement.clientWidth;
+var body = document.querySelector('.body');
 var burger = document.querySelector('.burger');
 var burgerFooter = document.querySelector('.burger--footer');
-var width = document.documentElement.clientWidth;
+var burgerMenu = document.querySelector('.burger__menu');
+var burgerClose = document.querySelector('.burger__menu-close');
 burger.addEventListener('click', function (e) {
-  e.currentTarget.classList.toggle('burger--active');
+  burger.classList.toggle('burger--active');
+  body.classList.toggle('body--no-scroll');
+  burgerMenu.classList.toggle('burger__menu--active');
 });
 burgerFooter.addEventListener('click', function (e) {
   e.currentTarget.classList.toggle('burger--active');
+});
+burgerClose.addEventListener('click', function () {
+  burger.classList.toggle('burger--active');
+  body.classList.toggle('body--no-scroll');
+  burgerMenu.classList.toggle('burger__menu--active');
 });
 $('.gallery__list').slick({
   infinite: true,
